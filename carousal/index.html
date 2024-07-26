@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .main {
+            width: 80vw;
+            height: 50rem;
+            border-radius: 1rem;
+            box-shadow: rgba(0,0,0,0.9) 0px 7px 29px 0px;
+            background-image: url("https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            background-size: cover;
+            animation: gallery 25s ease infinite;
+        }
+
+         @keyframes gallery {
+
+                0% {
+                    background-image:url("https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+                }
+                20% {
+                    background-image:url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+                }
+                40% {
+                    background-image:url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+                }
+                50% {
+                    background-image:url("https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+                }
+                65% {
+                    background-image:url("https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg")
+                }
+                75% {
+                    background-image:url("https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+                }
+                85% {
+                    background-image:url("https://images.pexels.com/photos/459203/pexels-photo-459203.jpeg")
+                }
+                100% {
+                    background-image:url("https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+                }
+                
+            }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="main"></div>
+</body>
+</html>

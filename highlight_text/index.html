@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Urbanist";
+            
+        }
+         body{
+            /* height: 300px;
+            width: 600px; */
+            border-radius: 1rem;
+            border: 2px solid blueviolet;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50%;
+            margin-top: 25%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+        }
+        h1{
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            font-size: 96px;
+            /* text-shadow: -1px 2px 3px rgba(236, 247, 76, 0.2); */
+            position: relative;
+        }
+
+        h1::before{
+            content: "PavanVenkat";
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            color: blueviolet;
+            /* border: 2px solid blueviolet; */
+            border-right: 2px solid blueviolet;
+            overflow: hidden;
+            animation: textreveal 2.5s linear infinite;
+        }
+
+        @keyframes textreveal {
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 100%;
+            }
+            100%{
+                width: 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>PavanVenkat</h1>
+</body>
+</html>
